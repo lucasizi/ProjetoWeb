@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Teste </title>
+	<script type="text/javascript">
+		function incrementa(){
+		document.getElementById("nota").value+= 10;
+		}
+		
+		function decrementa(){
+		document.getElementById("nota").value-= 10;
+		}
+		
+	</script>
+</head>
+<body> 
+	<form method="GET" action="#">
+		
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<input type="radio" id="radio">Masculino</label>
+			<input type="radio" id="radio">Feminino</label>
+			<input type="radio" id="radio">Não Binario</label>
+			
+			<input type="text" name="Nome" placeholder="Digite seu nome">
+		</fieldset>
+		
+		<select name="select">
+			<option value="valor1">Valor1</option>
+			<option value="valor2">Valor2</option>
+			<option value="valor3">Valor3</option>
+		</select>
+		
+		<br>
+		
+		<progress value="70" max="100" id="nota">70%</progress>
+		<button onclick="incrementa()">Incrementa</button>
+		<button onclick="decrementa()">Decrementa</button>
+		
+		<input list="browsers">
+		<datalist id="browsers">
+			<option value="Chrome">
+			<option value="Firefox">
+			<option value="Iternet Explorer">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+		
+	</form>
+</body>	
+</html>
